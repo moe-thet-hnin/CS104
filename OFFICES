@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color: #c1c6c8; color: white; padding:10px; text-align: left;"> OFFICE SCOUT </h1> 
+<img src="officess.png" width="800" height="150">
+
+<table>
+<head>
+<style>
+table {
+font-family: helvetica;
+width: 100%;
+text-allign: center;
+}
+
+td, th {
+border: 1px solid #dddddd;
+padding: 8px;
+width: 50%;
+}
+
+tr:nth-child(even) {
+background-color: #071d49;
+color: white;
+}
+</style>
+</head>
+
+
+<tr>
+<th style="background-color:#d22630; color:white;" >NJIT OFFICES</th>
+<th style="background-color:#d22630; color:white;">LOCATION</th>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+<tr>
+<td>NAME OF OFFICE</td>
+<td>LOCATION</td>
+</tr>
+
+</table>
+</body>
+</html>

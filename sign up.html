@@ -1,78 +1,67 @@
 <!DOCTYPE html>
-<html>
-<title>Sign Up for Office Scout NJIT</title>
-<body style="background-color: #071D49;">
-
-<h1 style= "TEXT-ALIGN: CENTER; font-family: Helvetica; FONT-SIZE: 45PX; COLOR: WHITE; line-height: 2.5ch;"> Welcome to<br>OFFICE SCOUT!</h1>
-
-<h2 style="color: #C1C6C8; font-family: Helvetica; margin-left: 5in">EMAIL ADDRESS</h3>
-<input type="email" placeholder="Email" class="input"
-    style="height: 4ch; width: 6in;
-        margin-block-start: -1in; margin-left: 4.9in;
-        font-family: Helvetica; font-size: .2in;
-        border-radius: .07in;">
-
-<h2 style="color: #C1C6C8; font-family: Helvetica; margin-left: 5in">PASSWORD</h2>
-<input type="password" placeholder="Password" class="input"
-    style="height: 4ch; width: 6in;
-        margin-block-start: -1in; margin-left: 4.9in;
-        font-family: Helvetica; font-size: .2in;
-        border-radius: .07in;"
->
-
-<a href="index.html">
-    <button style="background-color: #D22630; color: #ffffff;
-    height: 4ch; width: 3in; border-radius: .07in;
-    font-family: Helvetica; font-size: .2in;
-    margin-left: 6.4in; margin-right: 6.5in; margin-top: .5in;"
-    >CREATE ACCOUNT</button>
-</a>
-
-<br>
-<br>
-
-<style> 
-    h4 { 
-        display: flex; 
-        flex-direction: row; 
-    } 
-          
-    h4:before, 
-    h4:after { 
-        content: ""; 
-        flex: 1 1; 
-        border-bottom: 1px solid #C1C6C8; 
-        margin: auto;} 
-          
-    img { 
-        height: 100px; 
-        width: 100px;
-        border-radius: 50%;} 
-</style> 
-
-    <h4 style="background-color: #071D49; color: #C1C6C8; font-family: Helvetica; font-weight: 100;
-     width: 5in; margin-left: 5.4in; margin-right: 5.5in;">OR</h4>
-
-<p style="text-align: center; font-family: Helvetica; color:#C1C6C8">Sign up with</p>
-
-<br>
-
-<div class="button-container">
-    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Den-US&ec=GAlA8wE&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1325334179%3A1698548093541110&theme=glif" style="text-decoration: none;"><img src="Google_Icon.jpg" style="width: 50px; height: 50px; position: relative; left: 650px;"alt="Google_Icon"></a>
-    <a href="https://webauth.njit.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1" style="text-decoration: none;"><img src="NJIT_Icon.jpg" style="width: 50px; height: 50px; position: relative; left: 760px;"alt="NJIT_Icon"></a>
-</div>
-
-<br>
-<br>
-
-<a href="log in.html"
-    style="color:#C1C6C8; font-family: Helvetica; font-weight: 100; text-decoration: underline;
-    margin-left: 7in;">Already have an account?</a>
-
-<br>
-<a href="index.html"
-    style="color:#C1C6C8; font-family: Helvetica; font-weight: 100; text-decoration: underline;
-    margin-left: 7in;">Return to Homepage</a>
-
-</body>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Office Scout Sign Up</title>
+      <link rel="stylesheet" href="sustyle.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="bg-img">
+         <div class="content">
+            <header>Welcome to <br> Office Scout!</header>
+            <form action="#">
+               <div class="field">
+                  <span class="fa fa-user"></span>
+                  <input type="text" required placeholder="Email">
+               </div>
+               <div class="field space">
+                  <span class="fa fa-lock"></span>
+                  <input type="password" class="pass-key" required placeholder="Password">
+                  <span class="show">SHOW</span>
+               </div>
+               <div class="pass">
+                  <a href="#">Forgot Password?</a>
+               </div>
+               <div class="field">
+                  <input type="submit" value="CREATE ACCOUNT">
+               </div>
+            </form>
+            <div class="signup">
+               Or sign up with
+            </div>
+            <div class="links">
+               <div class="google">
+                  <i class="fab fa-google"><span>Google</span></i>
+               </div>
+               <div class="njit">
+                  <i class="fa fa-university"><span>NJIT</span></i>
+               </div>
+            </div>
+            <div class="login">
+               Already have an account?
+               <a href="#">Log In</a>
+            </div>
+            <br>
+            <div class="index">
+                <a href="#">Return to Homepage</a>
+             </div>
+         </div>
+      </div>
+      <script>
+         const pass_field = document.querySelector('.pass-key');
+         const showBtn = document.querySelector('.show');
+         showBtn.addEventListener('click', function(){
+          if(pass_field.type === "password"){
+            pass_field.type = "text";
+            showBtn.textContent = "HIDE";
+            showBtn.style.color = "#3498db";
+          }else{
+            pass_field.type = "password";
+            showBtn.textContent = "SHOW";
+            showBtn.style.color = "#222";
+          }
+         });
+      </script>
+   </body>
 </html>

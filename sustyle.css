@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+.bg-img{
+  background: url('sign up bg.png');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.bg-img:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #071d49c1;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%,-50%);
+  background: #071d497f;
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+
+}
+.content header{
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Helvetica';
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.field span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Helvetica';
+}
+.space{
+  margin-top: 16px;
+}
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: 'Helvetica';
+}
+.pass-key:valid ~ .show{
+  display: block;
+}
+.pass{
+  text-align: left;
+  margin: 10px 0;
+}
+.pass a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Helvetica';
+}
+.pass:hover a{
+  text-decoration: underline;
+}
+.field input[type="submit"]{
+  background: #D22630;
+  border: 1px solid #D22630;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Helvetica';
+}
+.field input[type="submit"]:hover{
+  background: #c6252d;
+}
+.signup{
+  color: white;
+  margin: 20px 0;
+  font-family: 'Helvetica';
+}
+.links{
+  display: flex;
+  cursor: pointer;
+  color: white;
+  margin: 0 0 20px 0;
+}
+.google,.njit{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 10px;
+}
+.google{
+  margin-left: 0;
+  background: #4285F4;
+  border: 1px solid #4285F4;
+}
+.njit{
+  background: #D22630;
+  border: 1px solid D22630;
+}
+.google:hover{
+  background: #3c7bdf;
+}
+.njit:hover{
+  background: #c6252d;
+}
+.links i{
+  font-size: 17px;
+}
+i span{
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: 'Helvetica';
+}
+.login{
+  font-size: 15px;
+  color: white;
+  font-family: 'Helvetica';
+}
+.login a{
+  color: #3498db;
+  text-decoration: none;
+}
+.login a:hover{
+  text-decoration: underline;
+}
+.index a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Helvetica';
+}
+.index a:hover{
+  text-decoration: underline;
+}
